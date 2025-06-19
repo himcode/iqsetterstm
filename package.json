@@ -1,0 +1,29 @@
+{
+  "name": "jwt-auth-backend",
+  "version": "1.0.0",
+  "description": "Node.js backend for login system using JWT and refresh tokens",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "jwt",
+    "auth",
+    "express",
+    "nodejs",
+    "refresh-token"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
