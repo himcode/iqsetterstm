@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS users (
 
 CREATE TABLE IF NOT EXISTS tasks (
     id SERIAL PRIMARY KEY,
+    parent_task_id INTEGER REFERENCES tasks(id) ON DELETE CASCADE,  -- self-reference
     title TEXT NOT NULL,
     description TEXT,
     status TEXT DEFAULT 'todo',
